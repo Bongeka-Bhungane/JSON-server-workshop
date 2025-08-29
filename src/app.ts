@@ -14,3 +14,9 @@ async function fetchItems() {
 }
 // Calling the function
 fetchItems();
+
+let root = document.getElementById("root") as HTMLElement;
+function noCharacterData(rootElement: HTMLElement, message: string): void {
+  rootElement.innerHTML = message;
+};
+noCharacterData(root, "No character to display.");
